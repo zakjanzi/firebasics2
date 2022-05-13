@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanilla ToDo</title>
 
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app-compat.js"></script>
+
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+        //Why is the auth module not being loaded even though I copied those links from firebase? https://firebase.google.com/docs/web/alt-setup
         import { auth } from 'https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js'
         import { firestore } from 'https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js'
-        // Your web app's Firebase configuration
+
+        //Firebase configuration
         const firebaseConfig = {
           apiKey: "AIzaSyBLCImOj8-IPV8S6PEtZJy1hFXDTG7tzsY",
           authDomain: "firebasics-d986d.firebaseapp.com",
